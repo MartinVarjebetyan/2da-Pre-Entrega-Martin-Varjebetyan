@@ -1,0 +1,23 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+#espacio{
+    margin: 10%;
+}
+#espacio2{
+    margin: 25%;
+}
+#espacio3{
+    margin-top: 100px;
+}
+#espacio4{
+    text-align: center;
+    margin-top: 100px;
+}
+#espacio5{
+    padding: 10px;
+}
+#ejercicio{
+    justify-content: center;
+}
