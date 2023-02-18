@@ -2,6 +2,8 @@
     margin: 0%;
     padding: 0%;
 }
+
+/* Ajustar espacios */
 #espacio{
     margin: 10%;
 }
@@ -20,4 +22,67 @@
 }
 #ejercicio{
     justify-content: center;
+}
+
+
+/* pagina sevicios.html "main" */
+.contenedor-padre{
+    margin-top: 100px;
+}
+
+/* Flexbox del "main" de la pagina servicios*/
+.Flex-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    /* boxmodeling */
+    border: inset 1px goldenrod;
+    color: goldenrod;
+    margin-top: 60px;
+}
+
+/* Grid del "main" de la pagina servicios */
+.contenedor-hijo {  
+    display: grid;
+    grid-template-columns: 0.4fr 1.6fr;
+    grid-template-rows: auto auto;
+    gap: 13px 3px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "imagen Descripcion"
+      "imagen1 Descripcion1";
+}
+  .imagen { 
+   justify-self: center;
+   align-self: center;
+    grid-area: imagen; 
+}
+.imagen1 { 
+   justify-self: center;
+   align-self: center;
+    grid-area: imagen1; 
+}
+  .Descripcion { 
+    text-align: center;
+    background-color: goldenrod;
+    grid-area: Descripcion; 
+}
+  .Descripcion1 { 
+    text-align: center;
+    background-color: goldenrod;
+    grid-area: Descripcion1; 
+}
+
+/* Media Queries */
+@media (max-width: 480px) {
+    .Flex-box {
+        background-color: brown;
+    }
+    .Descripcion{
+        background-color: brown;
+    }
+    .Descripcion1{
+        background-color: brown;
+    }
 }

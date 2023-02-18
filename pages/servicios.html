@@ -11,6 +11,8 @@
             <!-- hojas de estilos -->
             <link rel="stylesheet" href="../css/style.css">
 </head>
+
+<!-- full bootstrap -->
 <body class="p-3 mb-2 bg-black text-white">
     <body >
     <header>
@@ -31,15 +33,38 @@
             </div>
         </nav>
     </header>
+
+    <!-- Aplicando grid -->
     <main>
         <section>
-            <div>
-                <img src="../multimedia/logo/1605989.png" width="200" alt="Muñeco entrenando">
-                <h4>Rutina  de ejercicios que se ve adaptada a sus objetivos </h4>
-
-                <img src="../multimedia/logo/png-clipart-indian-cuisine-foodservice-eating-computer-icons-breakfast-food-recipe.png" width="200" alt="imagen de comida">
-                <h4>Con base en los objetivos especificados enviados se realizará una lista de las calorías, proteínas y carbohidratos que consumirá de manera diaria</h4>
-            </div>
+            <!-- Aplicando Flexbox y Media Queries -->
+            <h3 class="Flex-box">Una Asesoría contiene lo siguiente</h3>
+            <div class="contenedor-padre">
+                <div class="contenedor-hijo">
+                    <div class="imagen"><img src="../multimedia/logo/mancuerna.png" alt="Logo-de-mancuerna"></div>
+                    <div class="imagen1"><img src="../multimedia/logo/ensalada.png" alt="Logo-de-ensalada"></div>
+                    <div class="Descripcion"><h4>Rutina  de ejercicios que se ve adaptada a sus objetivos </h4></div>
+                    <div class="Descripcion1"><h4>Con base en los objetivos especificados enviados se realizará una lista de las calorías, proteínas y carbohidratos que consumirá de manera diaria</h4></div>
+                </div>
+            </div>    
         </section>
     </main>
+    <footer>
+        <div id="espacio3" class="container text-center">
+            <a href="./pages/asesoria.html" role="button">
+                <span class="btn btn-warning">Quiero una asesoría</span>
+            </a>
+        </div>
+        <div id="espacio4" class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <a href="https://web.whatsapp.com/" target="_blank"><img src="../multimedia/logo/124034.png" width="50" alt="Logo de WhatsApp"></a>
+                </div>
+                <div class="col">   
+                    <a href="https://www.instagram.com/" target="_blank"><img src="../multimedia/logo/logo de insta.jpg" width="50" alt="Logo de instagram"></a>    
+                </div>
+            </div>
+        </div>    
+        <p id="espacio4"> Martin Varjebetyan © 2023. Todos los derechos reservados</p>
+    </footer>
 </html>
